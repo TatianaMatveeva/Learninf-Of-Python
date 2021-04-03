@@ -1,2 +1,2 @@
-# RedQueen
+# LEARN_PYTHON
 Study
