@@ -1,2 +1,2 @@
 # LEARN_PYTHON
-Study
+Learning Python with Skillbox
