@@ -1,2 +1,2 @@
 # LEARN_PYTHON
-Learning Python with Skillbox
+Learning Python with SkillFactory
