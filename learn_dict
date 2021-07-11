@@ -1,0 +1,35 @@
+# словарь решает задачу - список -пар-ключ-значение
+# большая записная книжка для хранения элементов(увеличивает производительность)
+
+players = {
+    'Carlsen' : 2842,
+    'Caruana' : 2822,
+    'Mameduarov' : 2801,
+    'Ding' : 2797,
+    'Giri' : 2780
+}
+
+players = dict(Carlsen=2842, Caruana=2822, Mameduarov=2801, Ding=2797, Giri=2780) # 2йвариант записи 
+print(players)
+# {'Carlsen': 2842, 'Caruana': 2822, 'Mameduarov': 2801, 'Ding': 2797, 'Giri': 2780}  выведет готовый словарь
+
+top1 = players['Carlsen'] # узнаем рейтинг игрока по имени /рейтингу
+
+players.get('Carlsen') # get берет значение по ключу для вывода презультата
+
+players['So'] = 2780 # добавит игрока в словарь и обновление данных по ключу
+
+del players['So'] # удаление по ключу
+
+keys = players.keys()
+print(type(keys))
+print(keys) # выведет список ключей
+
+l = list(players.keys())
+# изменение типа 
+
+sorted(players.keys())
+# сортировка словаря
+
+print('Carlsen' in players) # проверка на вхождение элемента в список #True
+
