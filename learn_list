@@ -1,0 +1,73 @@
+int_list = [1,2,3]
+mixed_list = [1,2.0, 'string']
+len(int_list) 
+
+print(int_list[0])
+print(int_list[1:])
+
+names1 = ['John', 'Bob', 'Alice']
+names2 = ['Tracy', 'Elli', 'Mason']
+names1 + names2 # используем контенацию
+# обьединение списков ['John', 'Bob', 'Alice','Tracy', 'Elli', 'Mason']
+names = names2+names1
+print(names)
+# создание нового списка
+
+# работа с отдельными элементами в списке по индексу замена/вызов в вывод
+
+names1[0] = 'Liam'
+# ['Liam', 'Bob', 'Alice'}
+
+
+# добавление нового элемента с методом append
+names.append('William')
+# ['Liam', 'Bob', 'Alice','Tracy', 'Elli', 'Mason', 'William']
+
+# удаление последнего элемента с конца и возвращает его
+
+popped = names.pop()
+print(popped) # William - удалиться
+print(names) # список после удаления ['Tracy', 'Elli', 'Mason', 'John', 'Bob',]
+
+# удаление по индексу
+names.pop(0)
+# ['Elli', 'Mason', 'John', 'Bob', 'Alice']
+
+
+names.sort
+letters = ['ac', 'ab', 'aa']
+letters.sort()
+# вывод ['aa', 'ab', 'ac']
+# сортировка по алфавиту; так же сортирует по целевой сортировке - сравниваеться элемент целиком
+# и по длине элемента
+
+letters= ['abc', 'a', 'ab']
+letters.sort(key=len) # ключ подсчитает длину строки и выдает готовый отсортированный список
+# вывод ['a', 'ab', 'abc']
+
+# sort  внутри себя исльзует систему тим сорт которая сортирует при мимнимальном затрате времекни и памяти
+
+numbers = [3,2,8,5,0,3,4,1,1]
+numbers.reverse()
+print(numbers)
+# вывод [1, 1, 4, 3, 0, 5, 8, 2, 3]
+# показывает список задом наперед
+
+numbers.sort(reverse=True) # сортировка по убыванию
+
+# добавление элемента по определенному индексу
+numbers.insert(1, 22) # вставка элемента 22 после 1го элемента
+
+# нахождение элемента с спикске
+numbers.index(5)
+
+# считаем кол-во вхождения элемента в список
+
+print(numbers.count(3))
+# найдет 2 тройки в списке
+
+# копирование списка; возвращает поверхностную копию
+copy = numbers.copy()
+
+# очистка спика
+numbers.clear()
